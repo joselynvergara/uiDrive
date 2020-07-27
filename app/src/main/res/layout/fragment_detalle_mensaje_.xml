@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/woman"
+            app:civ_border_color="#D6C2C2"
+            app:civ_border_width="2dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="28dp"
+            android:src="@drawable/woman"></ImageView>
+
+        <TextView
+            android:id="@+id/id_destinatario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:text="Detalle Persona"
+            android:textSize="12sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Asunto"
+        android:textSize="10sp"
+        android:id="@+id/asunto">
+    </TextView>
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Mensaje"
+        android:textSize="10sp">
+
+    </TextView>
+    <ImageView
+        android:id="@+id/imagen_detalleid"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:src="@drawable/ic_launcher_background"
+        ></ImageView>
+</LinearLayout>
