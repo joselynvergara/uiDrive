@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item
+                android:id="@+id/Priori"
+                android:title="Prioridad"
+
+                android:icon="@drawable/check"/>
+            <item
+                android:id="@+id/destacados"
+                android:icon="@drawable/share"
+                android:title="Destacados"/>
+            <item
+                android:id="@+id/sinconexiones"
+                android:icon="@drawable/people"
+                android:title="Sin conexión"/>
+            <item
+                android:id="@+id/icon"
+                android:icon="@drawable/ic_baseline_folder_open_24"
+                android:title="Sin conexión"/>
+
+</menu>

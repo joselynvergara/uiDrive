@@ -17,6 +17,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.uidrive.Entidades.DriveDoc;
 import com.example.uidrive.Fragments.BandejaMensajeFragment;
 import com.example.uidrive.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         DrawerLayout drawerLayout;
         ActionBarDrawerToggle actionBarDrawerToggle;
         Toolbar toolbar;
+
         NavigationView navigationView;
 
         FragmentManager fragmentManager;
@@ -37,12 +39,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
+
         //texttoolbar = findViewById(R.id.tittle_toolbar);
         setSupportActionBar(toolbar);
-
-
-
-
 
             drawerLayout = findViewById(R.id.drawer);
             navigationView = (NavigationView) findViewById(R.id.navigationView);
@@ -60,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragmentTransaction.add(R.id.container_fragment,new BandejaMensajeFragment());
             fragmentTransaction.commit();
 
+            BottomNavigationView bottomNavigationView = findViewById(R.id.btn_navig);
+            bottomNavigationView.setSelectedItemId(R.id.Priori);
     }
 
         @SuppressLint({"WrongConstant", "ShowToast"})

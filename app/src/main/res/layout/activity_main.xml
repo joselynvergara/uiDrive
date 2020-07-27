@@ -6,18 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".Interfaces.MainActivity"
     android:id="@+id/drawer"
+    android:layout_margin="0dp"
     >
 
-    <include
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/drawer_toolbar"
-        />
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/content_main" app:itemIconTint="#BDBDBD"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/drawer_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp" />
+
+        <include
+            layout="@layout/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="#3C3F41" />
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
@@ -30,4 +38,23 @@
         android:fitsSystemWindows="true"
         >
     </com.google.android.material.navigation.NavigationView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btn_navig"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            app:itemBackground="@color/cardview_light_background"
+            app:itemIconTint="@drawable/select"
+            app:itemTextColor="@drawable/select"
+            app:menu="@menu/drawer_inferior">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </RelativeLayout>
+
 </androidx.drawerlayout.widget.DrawerLayout>

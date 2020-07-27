@@ -9,20 +9,26 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@android:color/white">
 
-
-        <EditText
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="Buscar en el Drive"
-            android:textColor="@android:color/black"></EditText>
-
+<EditText
+    android:layout_width="240dp"
+    android:singleLine="true"
+    android:fontFamily="sans-serif"
+    android:layout_height="34dp"
+    android:text="Buscar en el correo electrónico."
+    android:id="@+id/titulo"
+    android:textSize="14dp"
+    android:textColor="@android:color/darker_gray"
+    android:background="@android:color/white"
+    ></EditText>
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="40dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="100dp"
+
+            android:layout_toEndOf="@id/titulo"
             android:src="@drawable/foto"
             app:civ_border_color="#D6C2C2"
             app:civ_border_width="2dp" />

@@ -50,8 +50,8 @@ public class BandejaMensajeFragment extends Fragment {
         return view;
     }
     public void cargarLista(){
-    listaDrive.add(new DriveDoc("Diapositivas de comercio eléctronico",R.drawable.powerpoint,"23/07/2020",R.drawable.diapositiva));
-        listaDrive.add(new DriveDoc("Slytherin",R.drawable.imagenpng,"23/07/2020",R.drawable.harrypotter));
+    listaDrive.add(new DriveDoc("Diapositivas de comercio eléctronico",R.drawable.powerpoint,"Lo has subido hoy.",R.drawable.diapositiva));
+        listaDrive.add(new DriveDoc("Slytherin",R.drawable.imagenpng,"Lo has abierto hoy.",R.drawable.harrypotter));
         listaDrive.add(new DriveDoc("Sesión sincronica",R.drawable.video,"23/07/2020",R.drawable.youtube));
         listaDrive.add(new DriveDoc("Exposición",R.drawable.powerpoint,"23/07/2020",R.drawable.diap));
         listaDrive.add(new DriveDoc("Diapositivas de proyecto",R.drawable.powerpoint,"23/07/2020",R.drawable.diapositiva));
